@@ -3,9 +3,21 @@ import React from "react";
 const Navigationbar = () => {
   return (
     <div>
-      <div className="flex justify-between items-center ">
+      <div className="mx-[16px] lg:hidden flex justify-between items-center ">
+        <ul>
+          <li>
+            <h3 className="font-bold text-[14px]">Posts(368)</h3>
+          </li>
+        </ul>
+
+        <button className="bg-[#EDEEF0] py-[8px] px-[10px] rounded-md flex justify-center items-center">
+          Filter: All
+          <img className="pl-[10px]" src="down.png" alt="" />
+        </button>
+      </div>
+      <div className="justify-between items-center bg-white hidden lg:flex ">
         <div>
-          <ul className="inline-flex items-center list-none ">
+          <ul className=" items-center list-none  inline-flex">
             <li>
               <button
                 href="#"
@@ -59,7 +71,7 @@ const Navigationbar = () => {
           </button>
         </div>
       </div>
-      <hr />
+      <hr className="hidden lg:flex" />
     </div>
   );
 };

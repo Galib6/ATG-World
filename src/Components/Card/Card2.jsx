@@ -1,25 +1,25 @@
 import React from "react";
 
-const Card = () => {
+const Card2 = () => {
   return (
-    <div className=" w-[320px]  lg:h-[472px] lg:w-[692px] shadow-lg rounded-[4px]">
+    <div className=" w-[320px]  lg:w-[692px] shadow-lg rounded-[4px]">
       <img
         className=" w-[320px] h-[120px] lg:w-[692px] lg:h-[220px] object-cover"
-        src="https://www.online-tech-tips.com/wp-content/uploads/2020/02/font-type.png"
+        src="2.png"
         alt=""
       />
-      <div className="lg:px-[20px] px-[18px] ">
-        <h1 className="flex justify-start font-medium pt-[14px] lg:pt-[20px]">
-          ✍️
-          <span className="pt-1 text-[14px] lg:text-[18px]">Article</span>
+      <div className=" lg:px-[20px] px-[18px]  ">
+        <h1 className="flex justify-start text-[18px] font-medium pt-[14px] lg:pt-[20px]">
+          🔬<span className="pt-1 text-[14px] lg:text-[18px]">Education</span>
         </h1>
         <div className="flex justify-center">
-          <h1 className=" text-[15px] lg:text-[22px]  font-semibold">
-            What if famous brands had regular fonts? Meet RegulaBrands!
+          <h1 className="text-[15px] lg:text-[22px]  font-semibold">
+            Tax Benefits for Investment under National Pension Scheme launched
+            by Government
           </h1>
-          <div className="dropdown dropdown-end ml-[18px] ">
+          <div className="dropdown dropdown-end">
             <label tabIndex={0} className="">
-              <div className=" cursor-pointer">
+              <div className="cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -59,12 +59,12 @@ const Card = () => {
           <div className="flex justify-start items-center">
             <img
               className="lg:h-[48px] lg:w-[48px] h-[37px] w-[37px] rounded-full mr-[10px]"
-              src="https://images.squarespace-cdn.com/content/v1/58d1b3ff1b631bb1893d108d/813f4928-6cc6-4bc8-a4e4-265f94b4d665/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg?format=1000w"
+              src="p2.png"
               alt=""
             />
             <div className="flex flex-col">
               <h1 className="font-semibold text-[13px] lg:text-[18px]">
-                Sarthak Kamra
+                Sarah West
               </h1>
               <p className="text-[12px] lg:hidden mt-[-3px]">1.4k views</p>
             </div>
@@ -84,7 +84,7 @@ const Card = () => {
               </svg>
               <p className="ml-[8px] font-medium text-[14px]">1.4k views</p>
             </div>
-            <button className="px-[12px] py-[9px] bg-[#EDEEF0] ml-[40px] flex">
+            <button className="px-[12px] py-[9px] bg-[#EDEEF0] ml-[40px] flex ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -104,4 +104,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card2;

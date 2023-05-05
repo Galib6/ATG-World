@@ -1,25 +1,24 @@
 import React from "react";
 
-const Card = () => {
+const Card3 = () => {
   return (
-    <div className=" w-[320px]  lg:h-[472px] lg:w-[692px] shadow-lg rounded-[4px]">
+    <div className=" w-[320px]   lg:w-[692px] shadow-lg rounded-[4px]">
       <img
         className=" w-[320px] h-[120px] lg:w-[692px] lg:h-[220px] object-cover"
-        src="https://www.online-tech-tips.com/wp-content/uploads/2020/02/font-type.png"
+        src="car.png"
         alt=""
       />
       <div className="lg:px-[20px] px-[18px] ">
         <h1 className="flex justify-start font-medium pt-[14px] lg:pt-[20px]">
-          ✍️
-          <span className="pt-1 text-[14px] lg:text-[18px]">Article</span>
+          🗓️<span className="pt-1 text-[14px] lg:text-[18px]">Meetup</span>
         </h1>
-        <div className="flex justify-center">
-          <h1 className=" text-[15px] lg:text-[22px]  font-semibold">
-            What if famous brands had regular fonts? Meet RegulaBrands!
+        <div className="flex justify-between">
+          <h1 className="text-[15px] lg:text-[22px]  font-semibold">
+            Finance & Investment Elite Social Mixer @Lujiazui
           </h1>
-          <div className="dropdown dropdown-end ml-[18px] ">
+          <div className="dropdown dropdown-end ml-[18px]">
             <label tabIndex={0} className="">
-              <div className=" cursor-pointer">
+              <div className="cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -48,23 +47,49 @@ const Card = () => {
             </ul>
           </div>
         </div>
-        <p className="text-[19px] my-[12px] text-[#5C5C5C] hidden lg:block">
-          I’ve worked in UX for the better part of a decade. From now on, I plan
-          to rei…
-        </p>
-        <p className="text-[12px] my-[10px] text-[#5C5C5C] lg:hidden">
-          I’ve worked in UX for the better part of a decade. F...
-        </p>
+
+        <div className="grid grid-cols-2 lg:grid-cols-3 mt-[12px]">
+          <div>
+            <h1 className="flex items-center justify-start">
+              <img
+                src="calen.svg"
+                alt=""
+                className="w-[16px] h-[16px] lg:w-[20px] lg:h-[20px]"
+              />{" "}
+              <span className="ms-[5px] text-[12px] lg:text-[15px] font-medium">
+                Fri, 12 Oct, 2018
+              </span>
+            </h1>
+          </div>
+          <div>
+            <h1 className="flex font-medium justify-end items-center">
+              <img
+                className="w-[16px] h-[16px] lg:w-[20px] lg:h-[20px]"
+                src="location.svg"
+                alt=""
+              />{" "}
+              <span className="ms-[5px] text-[12px] lg:text-[15px] font-medium">
+                Fri, 12 Oct, 2018
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div>
+          <button className="text-[#E56135] w-full mt-[16px] py-[10px] border border-inherit rounded-lg font-semibold text-[13px]">
+            Visit Website
+          </button>
+        </div>
+
         <div className="lg:my-[32px] my-[21px] flex items-center justify-between">
           <div className="flex justify-start items-center">
             <img
               className="lg:h-[48px] lg:w-[48px] h-[37px] w-[37px] rounded-full mr-[10px]"
-              src="https://images.squarespace-cdn.com/content/v1/58d1b3ff1b631bb1893d108d/813f4928-6cc6-4bc8-a4e4-265f94b4d665/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg?format=1000w"
+              src="p3.png"
               alt=""
             />
             <div className="flex flex-col">
               <h1 className="font-semibold text-[13px] lg:text-[18px]">
-                Sarthak Kamra
+                Ronal Jones
               </h1>
               <p className="text-[12px] lg:hidden mt-[-3px]">1.4k views</p>
             </div>
@@ -104,4 +129,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card3;
