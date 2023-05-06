@@ -73,7 +73,9 @@ const NavBar = () => {
                 It’s free!
               </span>
             </p>
-            <p className="lg:hidden">Sign In</p>
+            <p className="lg:hidden cursor-pointer" onClick={openModal}>
+              Sign Up
+            </p>
           </div>
         </div>
         <div className="lg:hidden">

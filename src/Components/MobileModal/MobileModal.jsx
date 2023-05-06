@@ -38,7 +38,7 @@ const MobileModal = ({ isOpen, onClose }) => {
             <div className="grid grid-cols-1 place-items-center">
               <input
                 type="text"
-                className="w-full bg-[#F7F8FA] border border-x-[#8A8A8A] border-t-[#8A8A8A] h-[40px] text-[13px] p-[12px]"
+                className="w-full bg-[#F7F8FA] border border-x-[#8A8A8A] border-t-[#8A8A8A] h-[40px] text-[13px] p-[12px] rounded-t-lg"
                 placeholder="Email"
                 name=""
                 id=""
@@ -49,7 +49,7 @@ const MobileModal = ({ isOpen, onClose }) => {
                   type={showPassword ? "text" : "password"}
                   value={password}
                   onChange={handleInputChange}
-                  className="w-full bg-[#F7F8FA] border border-[#8A8A8A] h-[40px] text-[13px] p-[12px]"
+                  className="w-full bg-[#F7F8FA] rounded-b-lg border border-[#8A8A8A] h-[40px] text-[13px] p-[12px]"
                   placeholder="Password"
                   name=""
                   id=""
@@ -125,14 +125,14 @@ const MobileModal = ({ isOpen, onClose }) => {
             <div className="flex justify-center w-full">
               <input
                 type="text"
-                className="w-full bg-[#F7F8FA] border border-[#8A8A8A] h-[40px] text-[13px] p-[12px]"
+                className="w-full bg-[#F7F8FA] border border-[#8A8A8A] h-[40px] text-[13px] p-[12px] rounded-tl-lg"
                 placeholder="First Name"
                 name=""
                 id=""
               />
               <input
                 type="text"
-                className="w-full bg-[#F7F8FA] border border-[#8A8A8A] h-[40px] text-[13px] p-[12px]"
+                className="w-full bg-[#F7F8FA] border border-[#8A8A8A] h-[40px] text-[13px] p-[12px] rounded-tr-lg"
                 placeholder="Last Name"
                 name=""
                 id=""
@@ -167,7 +167,7 @@ const MobileModal = ({ isOpen, onClose }) => {
             <input
               type="password"
               onChange={handleInputChange}
-              className="w-full bg-[#F7F8FA] border border-[#8A8A8A] h-[40px] text-[13px] p-[12px]"
+              className="w-full bg-[#F7F8FA] border border-[#8A8A8A] h-[40px] text-[13px] p-[12px] rounded-b-lg"
               placeholder="Confirm Password"
               name=""
               id=""
