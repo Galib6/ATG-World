@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <div className=" w-[320px]   lg:w-[692px] border border-inherit rounded-[4px]">
       <img
-        className=" w-[320px] h-[120px] lg:w-[692px] lg:h-[220px] object-cover"
+        className=" w-[318px] h-[115px] lg:w-[692px] lg:h-[220px] object-cover"
         src="bg1.png"
         alt=""
       />
