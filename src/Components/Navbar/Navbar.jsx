@@ -15,12 +15,16 @@ const NavBar = () => {
   };
   return (
     <nav className="bg-white shadow">
-      <div className="max-w-[1160px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+      <div className="max-w-[1160px] mx-auto  sm:px-6 lg:px-8">
+        <div className="flex lg:justify-between justify-around lg:h-16 h-12">
           <div className="flex">
             {/* Left: Item Name */}
-            <div className="hidden md:flex items-center">
-              <img src="atg.png" className="ms-[48px]" alt="" />
+            <div className="flex items-center">
+              <img
+                src="atg.png"
+                className="lg:ms-[48px] h-[10px] w-[70px] lg:w-auto lg:h-auto"
+                alt=""
+              />
             </div>
           </div>
 
@@ -49,7 +53,7 @@ const NavBar = () => {
           </div>
 
           {/* Right: Profile Picture and Name */}
-          <div className="flex items-center min-w-[178px]">
+          <div className=" items-center min-w-[178px] hidden lg:flex">
             <div className="flex items-center">
               <img
                 className="h-8 w-8 rounded-full object-cover"
@@ -63,14 +67,19 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex items-center">
-            <p className="text-[16px] min-w-[183px] cursor-pointer">
+            <p className="text-[16px] min-w-[183px] cursor-pointer hidden lg:flex">
               Create account.{" "}
               <span className="text-[#2F6CE5]" onClick={openModal}>
                 It’s free!
               </span>
             </p>
+            <p className="lg:hidden">Sign In</p>
           </div>
-          {/* <MobileModal isOpen={isModalOpen} onClose={closeModal} /> */}
+        </div>
+        <div className="lg:hidden">
+          <MobileModal isOpen={isModalOpen} onClose={closeModal} />
+        </div>
+        <div className="hidden lg:flex">
           <ModalPc isOpen={isModalOpen} onClose={closeModal}></ModalPc>
         </div>
       </div>
