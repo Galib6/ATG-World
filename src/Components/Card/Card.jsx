@@ -2,10 +2,10 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className=" w-[320px]   lg:w-[692px] shadow-lg rounded-[4px]">
+    <div className=" w-[320px]   lg:w-[692px] border border-inherit rounded-[4px]">
       <img
         className=" w-[320px] h-[120px] lg:w-[692px] lg:h-[220px] object-cover"
-        src="https://www.online-tech-tips.com/wp-content/uploads/2020/02/font-type.png"
+        src="bg1.png"
         alt=""
       />
       <div className="lg:px-[20px] px-[18px] ">

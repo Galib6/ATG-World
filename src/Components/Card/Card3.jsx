@@ -2,7 +2,7 @@ import React from "react";
 
 const Card3 = () => {
   return (
-    <div className=" w-[320px]   lg:w-[692px] shadow-lg rounded-[4px]">
+    <div className=" w-[320px]   lg:w-[692px] border border-inherit rounded-[4px]">
       <img
         className=" w-[320px] h-[120px] lg:w-[692px] lg:h-[220px] object-cover"
         src="car.png"

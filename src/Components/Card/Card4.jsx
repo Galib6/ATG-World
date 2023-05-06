@@ -2,7 +2,7 @@ import React from "react";
 
 const Card4 = () => {
   return (
-    <div className=" w-[320px]  lg:w-[692px] shadow-lg rounded-[4px]">
+    <div className=" w-[320px]  lg:w-[692px] border border-inherit rounded-[4px]">
       <div className="px-[20px]">
         <h1 className="flex justify-start font-medium pt-[14px] lg:pt-[20px]">
           💼
