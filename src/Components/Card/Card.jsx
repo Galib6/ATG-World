@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className=" w-[320px]  lg:h-[472px] lg:w-[692px] shadow-lg rounded-[4px]">
+    <div className=" w-[320px]   lg:w-[692px] shadow-lg rounded-[4px]">
       <img
         className=" w-[320px] h-[120px] lg:w-[692px] lg:h-[220px] object-cover"
         src="https://www.online-tech-tips.com/wp-content/uploads/2020/02/font-type.png"
@@ -55,7 +55,7 @@ const Card = () => {
         <p className="text-[12px] my-[10px] text-[#5C5C5C] lg:hidden">
           I’ve worked in UX for the better part of a decade. F...
         </p>
-        <div className="lg:my-[32px] my-[21px] flex items-center justify-between">
+        <div className="lg:mt-[32px] lg:mb-[26px] my-[21px] flex items-center justify-between ">
           <div className="flex justify-start items-center">
             <img
               className="lg:h-[48px] lg:w-[48px] h-[37px] w-[37px] rounded-full mr-[10px]"
