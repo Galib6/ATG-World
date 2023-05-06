@@ -6,24 +6,15 @@ import Card2 from "../Card/Card2";
 import Card3 from "../Card/Card3";
 import Card4 from "../Card/Card4";
 import RecomenondedGroups from "../RecomondedGroups/RecomenondedGroups";
-import MobileModal from "../MobileModal/MobileModal";
+import NavBar from "../Navbar/Navbar";
 
 const Homepage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className="relative">
+      <NavBar></NavBar>
       <TopBanner></TopBanner>
       <div className="max-w-[1040px] mx-auto">
-        <div className="mt-[32px] mb-[24px] sticky top-0 z-50">
+        <div className="mt-[32px] mb-[24px] lg:sticky lg:top-0 z-40">
           <Navigationbar></Navigationbar>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-3 ">
@@ -37,16 +28,6 @@ const Homepage = () => {
             <RecomenondedGroups></RecomenondedGroups>
           </div>
         </div>
-      </div>
-      <div className="container mx-auto p-4">
-        <button
-          onClick={openModal}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
-        >
-          Open Modal
-        </button>
-
-        <MobileModal isOpen={isModalOpen} onClose={closeModal} />
       </div>
     </div>
   );
